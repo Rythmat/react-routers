@@ -1,18 +1,25 @@
 import './App.css'
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route, Link} from "react-router-dom";
+import Red from './Red.jsx';
+import Blue from './Blue.jsx';
+import Home from './Home.jsx';
 
 function App() {
 
   return (
     <>
-     <div id="container">
+    <div id="container">
       <h1>Hello React Router!</h1>
-      <div id="navbar">{/* navigation here */}</div>
+      <div id="navbar">
+        <Link to='/blue'>BLUE</Link>
+        <Link to='/red'>RED</Link>
+        <Link to='/'>HOME</Link>
+      </div>
       <div id="main-section">
         <Routes>
-          <Route path='/' element={<h2>Welcome!</h2>}/>
-          <Route path='/blue' element={<h2>Blue!</h2>}/>
-          <Route path='/red' element={<h2>Red!</h2>}/>
+          <Route path='/' element={<Home />}/>
+          <Route path='/blue' element={<Blue />}/>
+          <Route path='/red' element={<Red />}/>
         </Routes>
       </div>
     </div>
