@@ -9,12 +9,7 @@ const Home = ({color,setColor}) => {
     homeClass.style.backgroundColor = color;
     setHomeColor(color);
   }
-
-  // if(color==''){
-  //   setColor('white');
-  // }
-
-
+  
   return (
     <>
     <div className="home">
