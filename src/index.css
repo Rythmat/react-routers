@@ -8,8 +8,14 @@ body > div {
 }
 #container {
   height: 100%;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
+}
+#root{
+  max-width: 100%;
+  padding: 0;
 }
 #container > div {
   display: flex;
@@ -35,7 +41,21 @@ body > div {
   background-color: #275db3;
   color: white;
 }
-.home {
-  background-color: rebeccapurple;
+.green {
+  background-color: green;
   color: white;
+}
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+.home {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.home > * {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
